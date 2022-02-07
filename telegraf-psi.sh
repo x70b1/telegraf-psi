@@ -1,6 +1,7 @@
 #!/bin/sh
 
 for resource in cpu memory io; do
-    sed "s/full/pressure resource=$resource,share=full/" < /proc/pressure/$resource | \
-    sed "s/some/pressure resource=$resource,share=some/"
+    sed "s/ /,/g" < /proc/pressure/$resource | \
+    sed "s/full,/pressure,resource=$resource,share=full /" | \
+    sed "s/some,/pressure,resource=$resource,share=some /"
 done
