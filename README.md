@@ -4,7 +4,7 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/x70b1/telegraf-psi.svg)](https://github.com/x70b1/telegraf-psi/graphs/contributors)
 [![license](https://img.shields.io/github/license/x70b1/telegraf-psi.svg)](https://github.com/x70b1/telegraf-psi/blob/master/LICENSE)
 
-A telegraf plugin to collect [Pressure Stall Information](https://www.kernel.org/doc/html/latest/accounting/psi.html) stats.
+A [Telegraf](https://github.com/influxdata/telegraf) plugin to collect [Pressure Stall Information](https://www.kernel.org/doc/html/latest/accounting/psi.html) stats.
 
 
 ## Configuration
