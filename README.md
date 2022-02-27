@@ -9,7 +9,7 @@ A telegraf plugin to collect [Pressure Stall Information](https://www.kernel.org
 
 ## Configuration
 
-```
+```ini
 [[inputs.exec]]
   command = "sh /opt/telegraf/telegraf-psi.sh"
   data_format = "influx"
@@ -20,7 +20,7 @@ A telegraf plugin to collect [Pressure Stall Information](https://www.kernel.org
 
 ## Output
 
-```
+```sh
 # sh /opt/telegraf/telegraf-psi.sh
 pressure,resource=cpu,share=some avg10=0.22,avg60=0.32,avg300=0.34,total=43903342529
 pressure,resource=memory,share=some avg10=0.00,avg60=0.00,avg300=0.00,total=2493
